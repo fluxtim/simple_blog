@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="main-section-container">
+    <h2>Create post page</h2>
+    <form method="post">
+        <label for="title">Title: </label>
+        <input name="title" id="title"><br><br>
+        <label for="body">Body: </label>
+        <textarea id="body" name="body" rows="10" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+{% endblock %}

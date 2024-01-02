@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="main-section-container">
+    <h3>Title: {{ post['title'] }}</h3>
+    <p>Author: {{ post['author'] }}</p>
+    <p>Body: {{ post['body'] }}</p>
+</section>
+{% endblock %}

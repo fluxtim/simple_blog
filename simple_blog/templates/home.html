@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="main-section-container">
+    <div class="post-list-flex-container">
+        {% for post in posts %}
+            <div class="post-preview-flex-container">
+                <div class="post-preview-text">
+                    <h2><a href="{{ url_for('posts.post', slug=post['slug']) }}">{{ post['title'] }}</a></h3>
+                    <p>Author: {{ post['author'] }}, Date: {{ post['created'] }}</p>
+                    <p>{{ post['body'] }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

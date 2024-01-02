@@ -1,0 +1,4 @@
+.venv/
+design/
+instance/
+simple_blog/__pycache__/
